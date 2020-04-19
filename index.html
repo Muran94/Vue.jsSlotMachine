@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Vue.jsで作るスロットマシン</title>
+</head>
+<body>
+  <div id="app">
+    <div class="slotmachine">
+      <slotmachine-panel ref="panel_1"></slotmachine-panel>
+      <slotmachine-panel ref="panel_2"></slotmachine-panel>
+      <slotmachine-panel ref="panel_3"></slotmachine-panel>
+    </div>
+
+    <div @click="spin" class="btn spin" :class="{'btn--disabled': isRunning}">SPIN</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

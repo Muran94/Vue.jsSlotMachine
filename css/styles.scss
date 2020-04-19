@@ -1,0 +1,106 @@
+body {
+  // Color
+  background: #fafafa;
+  color: #404040;
+
+  // Font & Text
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn {
+  // Animation
+  transition: opacity 0.3s;
+
+  // Color
+  background: #ddd;
+
+  // Cursor
+  cursor: pointer;
+  user-select: none;
+
+  // Flexbox
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  // Shadow
+  box-shadow: 0 5px 10px rgba(black, 0.1);
+
+  // Sizing
+  height: 32px;
+
+  &:not(.btn--disabled):hover {
+    // Color
+    opacity: 0.7;
+  }
+
+  &--disabled {
+    // Color
+    opacity: 0.5;
+
+    // Cursor
+    cursor: default;
+  }
+}
+
+.btn.spin {
+  // Color
+  background: #05dfd7;
+  color: white;
+
+  // Sizing
+  height: 36px;
+  width: 280px;
+
+  // Spacing
+  margin: 0 auto;
+}
+
+.slotmachine {
+  // Color
+  background: white;
+
+  // Flexbox
+  display: flex;
+  justify-content: space-between;
+
+  // Shadow
+  box-shadow: 0 10px 20px rgba(black, 0.1);
+
+  // Sizing
+  width: 300px;
+
+  // Spacing
+  padding: 20px;
+  margin: 30px auto 20px auto;
+
+  &__panel {
+    &-img {
+      // Shadow
+      box-shadow: 0 5px 10px rgba(black, 0.1);
+
+      // Sizing
+      width: 90px;
+      height: 110px;
+
+      // Spacing
+      margin-bottom: 5px;
+
+      &--unmatch {
+        // Color
+        opacity: 0.5;
+      }
+    }
+
+    .btn {
+      // Color
+      background: #f35588;
+      color: white;
+
+      // Font & Text
+      font-size: 14px;
+    }
+  }
+}
